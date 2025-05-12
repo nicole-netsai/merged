@@ -1,16 +1,9 @@
+rich>=10.14.0,<14.0.0  # Force compatible version for Streamlit
 streamlit>=1.26.0
-streamlit
 opencv-python-headless
-tensorflow
 numpy
 pandas
 Pillow
-datetime
-plotly 
-streamlit==1.32.2
-opencv-python-headless==4.9.0.80
-pandas==2.2.1
-numpy==1.26.4
+python-dateutil
+plotly
 ultralytics==8.1.0
-Pillow==10.2.0
-hashlib
