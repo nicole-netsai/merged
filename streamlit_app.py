@@ -67,7 +67,7 @@ PURPOSE_OF_VISIT = ["Lecture Attendance", "Business Meeting", "Ceremony/Event", 
 
 # Sidebar login
 with st.sidebar:
-    st.image("https://www.uz.ac.zw/images/uz_logo.png", width=150)
+    st.image("https://www.centralprocurement.com/wp-content/uploads/2023/04/University-of-Zimbabwe-Logo-2.jpg", width=80)
     st.title("University of Zimbabwe")
     st.subheader("Smart Parking System")
     
@@ -268,7 +268,7 @@ def main():
     if not st.session_state.auth["logged_in"]:
         st.title("🏛️ University of Zimbabwe")
         st.subheader("Smart Parking Management System")
-        st.image("https://th.bing.com/th/id/OIP.Iwa4T4iR5TBiuXAjYzykoQHaHa?rs=1&pid=ImgDetMain", use_container_width=True)
+        st.image("https://www.pinterest.com/pin/4714774601462175/", use_container_width=True)
         st.markdown("""
         <div style="text-align: center; margin-top: 10px;">
             <h4>Please login from the sidebar to access parking services</h3>
