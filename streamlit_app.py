@@ -222,7 +222,8 @@ def admin_panel():
     with tab2:
         st.subheader("System Management")
         st.write(f"Logged in as: {st.session_state.auth['name']} (Admin)")
-        st.write(f"Total reservations: {len(st.session_state.parking_data['history']}")
+        st.write(f"Total reservations: {len(st.session_state.parking_data['history'])}")
+#                                                                           ^ Added this parenthesis
         
         if st.button("Clear All Reservations"):
             st.session_state.parking_data['reservations'] = {}
