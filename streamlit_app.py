@@ -268,7 +268,7 @@ def main():
     if not st.session_state.auth["logged_in"]:
         st.title("🏛️ University of Zimbabwe")
         st.subheader("Smart Parking Management System")
-        st.image("https://www.uz.ac.zw/images/uz_campus.jpg", use_column_width=True)
+        st.image("https://www.uz.ac.zw/images/uz_campus.jpg", use_container_width=True)
         st.markdown("""
         <div style="text-align: center; margin-top: 20px;">
             <h3>Please login from the sidebar to access parking services</h3>
