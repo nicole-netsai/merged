@@ -67,7 +67,7 @@ PURPOSE_OF_VISIT = ["Lecture Attendance", "Business Meeting", "Ceremony/Event", 
 
 # Sidebar login
 with st.sidebar:
-    st.image("https://www.centralprocurement.com/wp-content/uploads/2023/04/University-of-Zimbabwe-Logo-2.jpg", width=80)
+    st.image("https://www.centralprocurement.com/wp-content/uploads/2023/04/University-of-Zimbabwe-Logo-2.jpg", width=120)
     st.title("University of Zimbabwe")
     st.subheader("Smart Parking System")
     
@@ -268,7 +268,7 @@ def main():
     if not st.session_state.auth["logged_in"]:
         st.title("🏛️ University of Zimbabwe")
         st.subheader("Smart Parking Management System")
-        st.image("https://www.pinterest.com/pin/4714774601462175/", use_container_width=True)
+        st.image("https://www.bing.com/images/search?view=detailV2&ccid=W5g71oYh&id=F94F173FC68E0490E843ABC3CF306CDBD8F0FDB4&thid=OIP.W5g71oYhOBS_PSlzQtNLCwHaHa&mediaurl=https%3a%2f%2fcdn0.iconfinder.com%2fdata%2ficons%2fhome-screen-apps-soft-fill%2f60%2fParking-App-application-park-location-512.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.5b983bd686213814bf3d297342d34b0b%3frik%3dtP3w2NtsMM%252fDqw%26pid%3dImgRaw%26r%3d0&exph=512&expw=512&q=Parking+App+Icon&simid=608002641026029461&FORM=IRPRST&ck=EAF2E09291CAA03FD6311CBA21588A42&selectedIndex=0&itb=0", use_container_width=True)
         st.markdown("""
         <div style="text-align: center; margin-top: 10px;">
             <h4>Please login from the sidebar to access parking services</h3>
