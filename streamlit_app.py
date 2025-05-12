@@ -59,8 +59,8 @@ if "auth" not in st.session_state:
 # University credentials
 UZ_CREDENTIALS = {
     "admin": {"password": "uzadmin2024", "role": "admin", "department": "Administration"},
-    "student123": {"password": "uzstudent", "role": "student", "department": "Computer Science"},
-    "lecturer456": {"password": "uzlecturer", "role": "lecturer", "department": "Engineering"}
+    "student123": {"password": "uzstudent", "role": "student", "department": "Mathematics"},
+    "lecturer456": {"password": "uzlecturer", "role": "lecturer", "department": "Mathematics"}
 }
 
 PURPOSE_OF_VISIT = ["Lecture Attendance", "Business Meeting", "Ceremony/Event", "Research", "Other"]
