@@ -7,6 +7,13 @@ from datetime import datetime
 import os
 from ultralytics import YOLO
 
+# Set page config - MUST BE FIRST STREAMLIT COMMAND
+st.set_page_config(
+    page_title="Smart Parking System",
+    page_icon="🚗",
+    layout="wide"
+)
+
 # Initialize session state for parking data
 if "parking_lots" not in st.session_state:
     st.session_state.parking_lots = [
@@ -25,7 +32,6 @@ def load_model():
         st.error(f"Failed to load model: {str(e)}")
         return None
 
-# Video processing function
 def process_video(video_path, model, lot_id):
     cap = cv2.VideoCapture(video_path)
     car_count = 0
@@ -52,7 +58,6 @@ def process_video(video_path, model, lot_id):
     
     return car_count
 
-# Reservation system
 def reserve_spot(lot_id, user_id, duration_minutes):
     lot = next(lot for lot in st.session_state.parking_lots if lot["id"] == lot_id)
     
@@ -67,7 +72,6 @@ def reserve_spot(lot_id, user_id, duration_minutes):
     })
     return True
 
-# Admin Portal UI
 def admin_portal():
     st.title("🚗 Smart Parking Management System")
     
@@ -149,5 +153,11 @@ def admin_portal():
             total_utilization = df["occupied"].sum() / df["capacity"].sum() * 100
             st.metric("Overall Utilization", f"{total_utilization:.1f}%")
 
+def main():
+    try:
+        admin_portal()
+    except Exception as e:
+        st.error(f"An error occurred: {str(e)}")
+
 if __name__ == "__main__":
-    admin_portal()
+    main()
